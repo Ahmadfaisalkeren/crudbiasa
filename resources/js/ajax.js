@@ -32,6 +32,7 @@ $(function () {
     });
 
     $('#addBook').click(function () {
+        $('#current_image').attr('src', '');
         $('#exampleModalLabel').html("Add Book");
         $('#saveBook').show();
         $('#updateBook').hide();

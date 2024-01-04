@@ -69,6 +69,7 @@ class BookService
     private function updateBookImage(Book $book, $image)
     {
         $imageName = time() . '.' . $image->getClientOriginalExtension();
+
         $imagePath = $image->storeAs('public/images', $imageName);
 
         if ($book->image) {
