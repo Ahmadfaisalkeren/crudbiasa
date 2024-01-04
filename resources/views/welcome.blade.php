@@ -70,8 +70,7 @@
         const bookUpdate = '{{ route('book.update', ['id' => 'book_id']) }}';
         const bookDelete = '{{ route('book.delete', ['id' => 'book_id']) }}';
     </script>
-    @vite(['resources/js/ajax.js'])
-    @vite(['resources/js/csrf.js'])
+    @vite(['resources/js/app.js'])
 </body>
 
 </html>
